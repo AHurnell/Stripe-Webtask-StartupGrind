@@ -3,7 +3,7 @@ var stripe = require('stripe@4.14.0');
 
 
 module.exports = function(ctx, cb) {
-
+//ctx is equivalent to context (?)
 //Call stripe API with a new order
 stripe(ctx.secrets.stripe_private_api_key).orders.create({
   currency: 'gbp',
