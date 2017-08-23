@@ -2,7 +2,7 @@
 var stripe = require('stripe@4.14.0');
 
 module.exports = function(ctx, cb) {
-  
+  //ctx is equivalent to context
   //Call stripe to pay an order
   //Pass order ID and stripe credit card token (POST variables)
   stripe(ctx.secrets.stripe_private_api_key).orders.pay(ctx.body.order, {
