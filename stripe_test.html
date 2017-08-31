@@ -1,6 +1,9 @@
 <html>
 <head>
-    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://js.stripe.com/v3/">
+    var stripe = Stripe('your-key-goes-here');
+    var elements = stripe.elements();
+    </script>
     <style>
     * {
   font-family: "Helvetica Neue", Helvetica;
